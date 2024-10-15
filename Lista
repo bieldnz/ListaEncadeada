@@ -147,5 +147,13 @@ public class Lista<Type>{
 		}
 		return auxiliar.dado;
 	}
+
+	public void clean()throws Exception{
+		if(listaVazia()){
+			throw new Exception("Lista Vazia");
+		}
+		primeiro.proximo = null;
+		primeiro = null;
+	}
 	
 }
